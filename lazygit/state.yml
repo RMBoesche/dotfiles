@@ -1,0 +1,9 @@
+lastupdatecheck: 0
+recentrepos:
+- /home/rmboesche/.config
+- /home/rmboesche/.config/nvim
+- /home/rmboesche/.config/nvim/pack/github/start/copilot.vim
+startuppopupversion: 5
+customcommandshistory:
+- q
+hidecommandlog: false

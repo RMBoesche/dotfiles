@@ -1,0 +1,33 @@
+#Neovim 
+alias nv='nvim'
+
+#Utils
+alias cl='clear'
+alias cgs='clear; gs'
+alias ls='exa'
+alias ll='exa -alh'
+alias tree='exa --tree'
+alias lg='lazygit'
+alias tn='tmux new -s' 
+
+#Git
+alias gp='git push'
+alias gs='git status'
+alias ga='git add'
+alias gl='git log'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gm='git commit -m'
+alias gma='git commit -am'
+alias gb='git branch'
+alias gc='git checkout'
+alias gra='git remote add'
+alias grr='git remote rm'
+alias gpu='git pull'
+alias gcl='git clone'
+
+#Silvaco
+alias cwd='cd /home/rodrigb/work/gf055/testcase/globalfoundries_55lpx/9tracks/'
+alias sl='sudo ~/.start_lic_server'
+alias rules='vi /home/rodrigb/work/gf055/techs/globalfoundries_55lpx/ngcompactor/rules.py'
+alias dev1='ssh -X rodrigb@10.1.8.41'
