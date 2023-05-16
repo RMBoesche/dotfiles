@@ -1,21 +1,39 @@
+# SILVACO STUFF
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+export PATH="~/.local/bin:$PATH"
+export NGTC_VERSION=2.16.1
+export PATH=/usr/local/nangate/tools/ngtc/$NGTC_VERSION/bin:${PATH}
+export DISPLAY=$(awk '/nameserver/ {print $2}' /etc/resolv.conf):0
+export NGLD_LICENSE_FILE=$HOME/licenses/license.dat
+export LM_LICENSE_FILE=$HOME/licenses/license.dat
+export NAN_LICENSE_FILE=7503@10.1.1.213
+export PATH=~/cello/ng_tool_suite/bin/:$PATH:$HOME/cello/ng_tool_suite/flexlm_distr/:$HOME/cello/ng_tool_suite/slam/bin/
+
+# MY STUFF
 export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH
 
 #Zsh Autosuggestions
-source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.config/dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #Zsh Syntax Highlighting - Catppuccin Theme
-source ~/.config/zsh/plugins/catppuccin_macchiato-zsh-syntax-highlighting.zsh
-source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.config/dotfiles/zsh/plugins/catppuccin_macchiato-zsh-syntax-highlighting.zsh
+source ~/.config/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Lazygit 
+export PATH=$HOME/go/bin:$PATH
 
 #Fuzzy Finder - Catpuccin Theme
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
+source ~/.fzf/key-bindings.zsh
+source ~/.fzf/completion.zsh
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796 \
 --color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
 --color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796"
 export FZF_CTRL_R_OPTS="--reverse"
 export FZF_TMUX_OPTS="-p"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #Bat - Catpuccin Theme
 export BAT_THEME="Catppuccin-macchiato"
@@ -24,7 +42,8 @@ export BAT_THEME="Catppuccin-macchiato"
 export PATH=$HOME/.config/tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 
 #Aliases
-source ~/.config/zsh/aliases
+source ~/.aliases
 
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+
