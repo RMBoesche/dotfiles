@@ -1,5 +1,5 @@
 #Neovim 
-alias nv='nvim'
+alias v='nvim'
 
 #Utils
 alias cl='clear'
@@ -9,6 +9,8 @@ alias ll='exa -alh'
 alias tree='exa --tree'
 alias lg='lazygit'
 alias tn='tmux new -s' 
+alias sb='cd ~/documents/second-brain/ && nvim'
+alias dv7todv8='/home/rmboesche/local/DV7toDV8_v0.6.0_script/DV7toDV8.sh'
 
 #Git
 alias gp='git push'
@@ -25,9 +27,3 @@ alias gra='git remote add'
 alias grr='git remote rm'
 alias gpu='git pull'
 alias gcl='git clone'
-
-#Silvaco
-alias cwd='cd /home/rodrigb/work/gf055/testcase/globalfoundries_55lpx/9tracks/'
-alias sl='sudo ~/.start_lic_server'
-alias rules='vi /home/rodrigb/work/gf055/techs/globalfoundries_55lpx/ngcompactor/rules.py'
-alias dev1='ssh -X rodrigb@10.1.8.41'
